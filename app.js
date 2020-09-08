@@ -1,13 +1,13 @@
 'use strict'
 
-// const hornArr = [];
+const hornArr = [];
 
 $.ajax('page-1.json', {method: 'GET', dataType: 'JSON'})
   .then(hornInfo => {
     hornInfo.forEach (animal=>{
       new Horn(animal).render();
     })
-    
+    sort();
   })
 
 function Horn(object){
@@ -16,6 +16,7 @@ function Horn(object){
   this.description = object.description;
   this.keyword = object.keyword;
   this.horns = object.horns;
+  hornArr.push(this);
 }
 
 Horn.prototype.render = function (){
@@ -29,12 +30,24 @@ Horn.prototype.render = function (){
   $('main').append($newSection);
 }
 
+// feature 2
 
-function sort = {
-  let hornArr = [];
-  for (var i = 0, i < horn)
-    if (i <= 1)
-    
+function sort () {
+  let keywordArr = [];
+  hornArr.forEach(oneHornObj =>{
+    if (keywordArr.includes(oneHornObj.keyword)=== false){
+      keywordArr.push(oneHornObj.keyword);
+    }
+  })
+  console.log(keywordArr); 
+  keywordArr.forEach(keyword =>{
+    const $newDropDown = $(`<option value= "${keyword}">${keyword}</option>`);
+    $('select').append($newDropDown);
+  })
 }
 
-keyword.prototype.
+function click ()
+
+$('select').on('click', function(){
+  click();
+})
