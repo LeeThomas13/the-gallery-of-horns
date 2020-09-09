@@ -30,8 +30,6 @@ Horn.prototype.render = function (){
   $('main').append($newSection);
 }
 
-// feature 2
-
 function sort () {
   let keywordArr = [];
   hornArr.forEach(oneHornObj =>{
@@ -39,13 +37,11 @@ function sort () {
       keywordArr.push(oneHornObj.keyword);
     }
   })
-  console.log(keywordArr); 
   keywordArr.forEach(keyword =>{
     const $newDropDown = $(`<option value= "${keyword}">${keyword}</option>`);
     $('select').append($newDropDown);
   })
 }
-console.log(hornArr)
 
 $('select').on('change', function(){
   // $('#horn-template').empty();
@@ -55,4 +51,4 @@ $('select').on('change', function(){
     $('section').hide();
     $(`section[class=${this.value}]`).show();
   }
-});
+})
