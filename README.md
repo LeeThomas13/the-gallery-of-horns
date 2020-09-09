@@ -21,20 +21,20 @@ Number and name of feature: ___Feature 2 Filter images____________
 
 Estimate of time needed to complete: _45mins__
 
-Start time: _____
+Start time: __2:45___
 
-Finish time: _____
+Finish time: __5:33pm___
 
-Actual time needed to complete: _____
+Actual time needed to complete: ___2 hours 48 minutes__
 
 
 Feature #3
 
 Number and name of feature: __Style the Application__________________
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __20min___
 
-Start time: _____
+Start time: __5:50___
 
 Finish time: _____
 
