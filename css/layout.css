@@ -8,10 +8,11 @@ body {
 }
 
 section {
-    float: auto;
+    flex-wrap: auto;
     justify-content: center;
     display: inline;
 }
+
 
 header{
     margin: 10px;
@@ -19,6 +20,9 @@ header{
 
 footer{
     display: block;
+}
+
+#horn-template{display: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -34,6 +38,12 @@ footer{
         max-width: 31%;
         min-height: 350px;
         justify-content: center;
+    }
+
+    {
+        flex-wrap: auto;
+        justify-content: center;
+        display: inline;
     }
 
 }

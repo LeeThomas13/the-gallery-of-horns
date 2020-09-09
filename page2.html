@@ -10,17 +10,27 @@
     <link rel="stylesheet" href="./css/theme.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap" rel="stylesheet">
+    <script id="animals" type="text/x-tmpl-mustache">
+      <div>
+        <h2>{{title}}</h2>
+        <h3>{{horns}}</h3>
+        <p>{{description}}</p>
+        <img src="{{image_url}}" alt="{{title}}"/>
+        {{{body}}}
+      </div>  
+    </script>
   </head>
   <body>
     <header>
-      <h1>The Gallery of Horns</h1>
+      <h1>The Gallery of Horns Extended</h1>
       <select>
         <option value="loadAll">Filter by Keyword</option>
       </select>
       <div>
         <nav>
           <ul>
-            <li><a href="page2.html">Gallery Extended</a></li>
+            <li><a href="index.html">Gallery Homepage</a></li>
+          
           </ul>
         </nav>
       </div>
@@ -37,6 +47,8 @@
       &copy; 2018 Code Fellows
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script type="text/javascript" src="./js/page2.js"></script>
+    
   </body>
 </html>
