@@ -1,41 +1,101 @@
-# the-gallery-of-horns #
+**The Gallery of Horns**
 
-here is our website. prod. by Dom and Lee
+Here is the website. prod. by Dom and Lee
 
-Feature #1 Display images
+**Lab 02 -**
+<br>
 
-Number and name of feature: _Feature 1 Display images____
+**Feature #1 Display images**
 
-Estimate of time needed to complete: __30 minutes___
+Number and name of feature: Feature 1 Display images
 
-Start time: __1:40pm___
+Estimate of time needed to complete: 30 minutes
 
-Finish time: _2:30pm___
+Start time: 1:40pm
 
-Actual time needed to complete: _50mins____
+Finish time: 2:30pm
 
-
-Feature #2 Filter images
-
-Number and name of feature: ___Feature 2 Filter images____________
-
-Estimate of time needed to complete: _45mins__
-
-Start time: __2:45___
-
-Finish time: __5:33pm___
-
-Actual time needed to complete: _2 hours 48 minutes__
+Actual time needed to complete: 50mins
+<br>
 
 
-Feature #3
+**Feature #2 Filter images**
 
-Number and name of feature: __Style the Application__________________
+Number and name of feature: Feature 2 Filter images
 
-Estimate of time needed to complete: __20min___
+Estimate of time needed to complete: 45mins
 
-Start time: __5:50___
+Start time: 2:45
 
-Finish time: _7:20____
+Finish time: 5:33pm
 
-Actual time needed to complete: __1hour30minutes___
+Actual time needed to complete: 2 hours 48 minutes
+<br>
+
+
+**Feature #3 Style**
+
+Number and name of feature: Style the Application
+
+Estimate of time needed to complete: 20min
+
+Start time: 5:50
+
+Finish time: 7:20
+
+Actual time needed to complete: 1hour 30minutes
+<br>
+
+**Lab 03 -**
+<br>
+
+**Feature 1 Pagination**
+
+Number and name of feature: Feature 1 Pagination
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+<br>
+
+**Feature 2 Templating**
+
+Number and name of feature: Feature 2 Templating
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+<br>
+
+**Feature 3 Styling with Flexbox**
+Number and name of feature: Feature 3 Styling with Flexbox
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+<br>
+
+**Feature 4 Sorting Images**
+Number and name of feature: Feature 4 Sorting Images
+
+Estimate of time needed to complete: 
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete: 
+<br>
+
