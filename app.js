@@ -21,7 +21,7 @@ function Horn(object){
 
 Horn.prototype.render = function (){
   const myTemplate = $('#horn-template').html();
-  const $newSection = $(`<section>${myTemplate}</section>`);
+  const $newSection = $(`<section class=${this.keyword}>${myTemplate}</section>`);
   $newSection.find('h2').text(this.title);
   $newSection.find('p').text(this.description);
   $newSection.find('img').attr('alt', this.keyword);
@@ -45,9 +45,14 @@ function sort () {
     $('select').append($newDropDown);
   })
 }
+console.log(hornArr)
 
-function click ()
-
-$('select').on('click', function(){
-  click();
-})
+$('select').on('change', function(){
+  // $('#horn-template').empty();
+  if(this.value === 'loadAll'){
+    $('section').show();
+  }else {
+    $('section').hide();
+    $(`section[class=${this.value}]`).show();
+  }
+});
