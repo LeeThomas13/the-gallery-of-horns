@@ -53,24 +53,24 @@ Actual time needed to complete: 1hour 30minutes
 
 Number and name of feature: Feature 1 Pagination
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 45min
 
-Start time: 
+Start time: 2:09pm
 
-Finish time: 
+Finish time: 2:25pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 16mins
 <br>
 
 **Feature 2 Templating**
 
 Number and name of feature: Feature 2 Templating
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1hour
 
-Start time: 
+Start time: 2:25pm
 
-Finish time: 
+Finish time: 3:26pm
 
 Actual time needed to complete: 
 <br>
