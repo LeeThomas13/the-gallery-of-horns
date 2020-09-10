@@ -40,10 +40,10 @@ footer{
         justify-content: center;
     }
 
-    {
+    img{
         flex-wrap: auto;
-        justify-content: center;
-        display: inline;
+        
+        
     }
 
 }
