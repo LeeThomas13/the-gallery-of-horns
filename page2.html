@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap" rel="stylesheet">
     <script id="animals" type="text/x-tmpl-mustache">
-      <div>
+      <section class="{{keyword}}">
         <h2>{{title}}</h2>
         <h3>{{horns}}</h3>
         <p>{{description}}</p>
         <img src="{{image_url}}" alt="{{title}}"/>
         {{{body}}}
-      </div>  
+      </section>  
     </script>
   </head>
   <body>
@@ -30,7 +30,6 @@
         <nav>
           <ul>
             <li><a href="index.html">Gallery Homepage</a></li>
-          
           </ul>
         </nav>
       </div>

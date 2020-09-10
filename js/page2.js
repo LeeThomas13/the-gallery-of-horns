@@ -21,24 +21,13 @@ function Horn(object){
   this.keyword = object.keyword;
   this.horns = object.horns;
   animalArr.push(this);
-  
 }
-
-console.log(animalArr);
 
 Horn.prototype.createHtml = function (){
   let template = $('#animals').html();
   let html = Mustache.render(template, this);
   return html;
 }
-
-animalData.forEach(animal => {
-  new Horn(animal);
-})
-
-
-
-console.log(animalArr);
 
 function sort () {
   let keywordArr = [];
@@ -53,10 +42,7 @@ function sort () {
   })
 }
 
-console.log(animalArr);
-
 $('select').on('change', function(){
-  // $('#horn-template').empty();
   if(this.value === 'loadAll'){
     $('section').show();
   }else {
