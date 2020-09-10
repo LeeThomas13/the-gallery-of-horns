@@ -78,21 +78,21 @@ Actual time needed to complete:
 **Feature 3 Styling with Flexbox**
 Number and name of feature: Feature 3 Styling with Flexbox
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 45min
 
-Start time: 
+Start time: 3:40
 
-Finish time: 
+Finish time: 5:07
 
-Actual time needed to complete: 
+Actual time needed to complete: 1 hour 27 minutes 
 <br>
 
 **Feature 4 Sorting Images**
 Number and name of feature: Feature 4 Sorting Images
 
-Estimate of time needed to complete: 
+Estimate of time needed to complete: 1 hour
 
-Start time: 
+Start time: 5:10
 
 Finish time: 
 
