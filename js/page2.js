@@ -94,3 +94,26 @@ $('#sortingKeyword').on('change', function(){
 })
 
 
+// NOTICE 9/9/20 SOLUTION BY Ron Dunphy (TA) 
+// Hey Dom, I figured out how to sort with multi-digit integers. You'll need to implement 2 sorting functions. Note the function call at the bottom.
+
+// Here's an example:
+
+// var array = [100, 5, 3, 98, 5]
+
+// function compareNumbers(a, b) {
+//   return a - b;
+// }
+
+
+// function sort(a, b) {
+//   if (a < b) {
+//     return -1;
+//   }
+//   if (a > b) {
+//     return 1;
+//   }
+//   return 0;
+// }
+
+// array.sort(compareNumbers);
