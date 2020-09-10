@@ -15,7 +15,7 @@ function Horn(object){
   this.title = object.title;
   this.description = object.description;
   this.keyword = object.keyword;
-  this.horns = object.horns;
+  this.horns = `${object.horns} Horns`;
   hornArr.push(this);
 }
 
