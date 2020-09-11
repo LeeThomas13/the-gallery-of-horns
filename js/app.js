@@ -1,14 +1,18 @@
 'use strict'
 
-const hornArr = [];
+const animalArr = [];
 
 $.ajax('./data/page-1.json', {method: 'GET', dataType: 'JSON'})
   .then(hornInfo => {
     hornInfo.forEach (animal=>{
-      new Horn(animal).render();
+      new Horn(animal);
     })
-    sort();
-  })
+    sortByAlpha();
+    animalArr.forEach(type => {
+      $('main').append(type.createHtml());
+    })
+  sortKeywords();
+})
 
 function Horn(object){
   this.image_url = object.image_url;
@@ -16,35 +20,71 @@ function Horn(object){
   this.description = object.description;
   this.keyword = object.keyword;
   this.horns = `${object.horns} Horns`;
-  hornArr.push(this);
+  animalArr.push(this);
 }
 
-Horn.prototype.render = function (){
-  const myTemplate = $('#horn-template').html();
-  const $newSection = $(`<section class=${this.keyword}>${myTemplate}</section>`);
-  $newSection.find('h2').text(this.title);
-  $newSection.find('p').text(this.description);
-  $newSection.find('img').attr('alt', this.keyword);
-  $newSection.find('h3').text(this.horns);
-  $newSection.find('img').attr('src', this.image_url);
-  $('main').append($newSection);
+Horn.prototype.createHtml = function (){
+  let template = $('#animals').html();
+  let html = Mustache.render(template, this);
+  return html;
 }
 
-function sort () {
+function sortKeywords () {
   let keywordArr = [];
-  hornArr.forEach(oneHornObj =>{
+  animalArr.forEach(oneHornObj =>{
     if (keywordArr.includes(oneHornObj.keyword)=== false){
       keywordArr.push(oneHornObj.keyword);
     }
   })
   keywordArr.forEach(keyword =>{
     const $newDropDown = $(`<option value= "${keyword}">${keyword}</option>`);
-    $('select').append($newDropDown);
+    $('#sortingKeyword').append($newDropDown);
   })
 }
 
-$('select').on('change', function(){
-  // $('#horn-template').empty();
+$('#sortingOther').on('change', function() {
+  $('main').empty();
+  if (this.value === 'alphabetical'){
+    console.log('sortByAlpha');
+    sortByAlpha();
+  } else if (this.value === 'hornNumber') {
+    console.log('sortByHorns');
+    sortByHorns();
+  }
+  animalArr.forEach((creature) => {
+    $('main').append(creature.createHtml());
+  })
+})
+
+const sortByHorns = () => {
+  animalArr.sort((a, b) => {
+    a = a.horns;
+    b = b.horns;
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    } else {
+      return 0;
+    }
+  })
+}
+
+const sortByAlpha = () => {
+  animalArr.sort((a, b) => {
+    a = a.title.toLowerCase();
+    b = b.title.toLowerCase();
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    } else {
+      return 0;
+    }
+  })
+}
+
+$('#sortingKeyword').on('change', function(){
   if(this.value === 'loadAll'){
     $('section').show();
   }else {
